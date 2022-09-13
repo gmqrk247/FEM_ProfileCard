@@ -10,9 +10,15 @@
 }
 
 body {
+    background-color: var(--dark-cyan);
+	background-image: url('images/bg-pattern-top.svg'),
+		url('images/bg-pattern-bottom.svg');
+	background-repeat: no-repeat, no-repeat;
+	background-position: top -500px left -400px
+    , bottom -700px right -250px;
+
 	display: grid;
 	place-content: center;
-	background: var(--dark-cyan);
 	min-height: 100vh;
 	font-size: var(--fs-body);
 }
@@ -70,14 +76,13 @@ span {
 	background: var(--grayish-blue);
 }
 
-
-.stats{
-    display: flex;
-    justify-content: space-around;
-    padding: 1.5rem 1rem;
-    align-items: center;
+.stats {
+	display: flex;
+	justify-content: space-around;
+	padding: 1.5rem 1rem;
+	align-items: center;
 }
 
-.stat p{
-    font-size: 13px;
+.stat p {
+	font-size: 13px;
 }
